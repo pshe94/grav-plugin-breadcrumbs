@@ -28,7 +28,7 @@ class Breadcrumbs
      */
     public function get($page)
     {
-        if (!$this->breadcrumbs || $this->page != $page) {
+        if (!$this->breadcrumbs || $this->page !== $page) {
             $this->build($page);
             $this->page = $page;
         }
